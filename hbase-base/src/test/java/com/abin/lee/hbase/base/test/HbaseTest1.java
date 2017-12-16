@@ -28,8 +28,8 @@ public class HbaseTest1 {
     static Configuration conf = null;
     static {
         conf = HBaseConfiguration.create();
-        conf.set("hbase.zookeeper.quorum", "172.16.2.132");
-//        conf.set("hbase.zookeeper.quorum", "localhost");
+//        conf.set("hbase.zookeeper.quorum", "172.16.2.132");
+        conf.set("hbase.zookeeper.quorum", "localhost");
     }
 
     /*
@@ -317,7 +317,7 @@ public class HbaseTest1 {
         // 创建表
         String tableName = "blog2";
         String[] family = { "article", "author" };
-        // creatTable(tableName, family);
+         creatTable(tableName, family);
 
         // 为表添加数据
 
